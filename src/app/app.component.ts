@@ -9,19 +9,10 @@ import { Validators } from '@angular/forms';
 })
 export class AppComponent {
   
-  constructor(private fb: FormBuilder){
+  constructor(){
 
   }
 
-  profileForm = this.fb.group({
-    firstName: ['',Validators.required],
-    lastName: ['',Validators.required],
-    address: this.fb.group({
-      street: ['',Validators.required],
-      city: [''],
-      state: [''],
-      zip: ['']
-    }),
-  });
+  
 
 }

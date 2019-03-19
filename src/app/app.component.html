@@ -1,16 +1,2 @@
-<form [formGroup]="profileForm">
-  <label>
-    First Name:
-    <input type="text" formControlName="firstName">
-  </label>
+<app-parent></app-parent>
 
-  <label>
-    Last Name:
-    <input type="text" formControlName="lastName">
-  </label>
-  <app-form-child [formGroupPai]="profileForm"></app-form-child>
-</form>
-
-{{profileForm.valid}}
-<br>
-{{profileForm.value | json}}
